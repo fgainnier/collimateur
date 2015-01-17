@@ -11,15 +11,13 @@ body {
 }
 
 .navbar-default .navbar-brand{
-	font-family: guardian-egypt, georgia, serif;
-	font-weight: 400;
-	color: #D15928;
-	font-size: 30px;
+	width: 110px;
+  	height: auto;
 }
 
 .navbar-default .navbar-nav > li >	a {
 	font-family: Arial, Helvetica, Sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	color: #D19285;
 }

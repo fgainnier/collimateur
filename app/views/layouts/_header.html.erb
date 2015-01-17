@@ -8,14 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">LE COLLIMATEUR</a>
+      <a href="/"><img alt="Brand" class="navbar-brand" src="<%= asset_path('logocollimateur.png') %>"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="/pages/about">About</a></li>
+        <li><a href="/pages/contact">Features</a></li>
         <li><a href="/pages/contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <button type="button" class="btn btn-default btn-xs btn-primary navbar-btn"><strong>S'enregistrer</strong></button>
+        <button type="button" class="btn btn-default btn-xs btn-success navbar-btn"><strong>Se connecter<strong></button>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

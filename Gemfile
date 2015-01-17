@@ -12,6 +12,9 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+gem "paperclip-dropbox", ">= 1.1.7"
+gem "figaro"
+
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'

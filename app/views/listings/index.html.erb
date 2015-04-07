@@ -1,21 +1,29 @@
-<div class="jumbotron center">
-<div class="container">
-<h1>finexpr</h1>
-<h4>The first platform where financial analysts can</br> buy and sell their financial models</h4>
-</div>
+<div class="col-md-12 footer nopadding">
+  <div class="container">
+    <ul class="navbar-item wall-entry footer-list">
+      <li class="navbar-item"><a class="footer" href="/">Business Plan</a></li>
+      <li class="navbar-item"><a class="footer" href="/">Valuation Model</a></li>
+      <li class="navbar-item"><a class="footer" href="/">LBO Model</a></li>
+      <li class="navbar-item"><a class="footer" href="/">M&A Model</a></li>
+      <li class="navbar-item"><a class="footer" href="/">Option Pricing Model</a></li>
+      <li class="navbar-item"><a class="footer" href="/">Capitalization Table</a></li>
+    </ul>
+   </div>
 </div>
 
 <div class="container">
+</br>
 <div class="center">
   <div class="row">
     <% @listings.each do |listing| %>
       <div class="col-md-3">
         <div class="thumbnail"> 
           <%= link_to image_tag(listing.image.url), listing %>
-          <div class="caption">
+          <div class="caption text-left">
             <h3><%= listing.name %></h3>
+            <p><%= "Sold by #{listing.user.name}"  %></p>   
             <p><%= number_to_currency(listing.price) %></p>
-            <p><%= "Sold by #{listing.user.name}"  %></p>      
+            <%= link_to "View details", listing %>
           </div>
         </div>
     </div>

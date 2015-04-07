@@ -8,6 +8,15 @@ body {
 	font-family: "Montserrat", Helvetica, Sans-serif;
 }
 
+.open {
+  font-family: Open sans, Helvetica, sans-serif;
+}
+
+.open-title {
+  font-family: Open sans, Helvetica, sans-serif;
+  font-weight:200;
+}
+
 .navbar-default{
 	background-color: #FFFFFF;
 	height: 30px;
@@ -28,6 +37,13 @@ body {
 	font-family: "Montserrat", Helvetica, Sans-serif;
 	font-size: 14px;
 	color: #D19285;
+}
+
+.navbar-item {
+  display: inline-block;
+  padding: 5px 15px 5px 0px;
+  margin:0;
+  font-size: 12px;
 }
 
 .center {
@@ -59,15 +75,29 @@ body {
 	background-image: url('https://www.dropbox.com/s/d2canryutvv5zqb/jumbotron.jpg?raw=1');
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-top:100px;	
+	padding-top:80px;	
 	height: 355px;
 	background-position: 0px -100px; 
 	background-size: cover;
-  	background-repeat: no-repeat;
-  	color: white;	
+  background-repeat: no-repeat;
+  color: white;	
 	font-family: "Montserrat", helvetica, sans-serif;
 	font-size: 40px;
 	text-align: center;
+}
+
+.alert {
+	margin-top: 15px;
+}
+
+.noborder {
+    border: 0 none;
+    box-shadow: none;
+}
+
+.title {
+	color: black;
+  font-weight: bold;
 }
 
 .social {
@@ -76,7 +106,7 @@ body {
 }
 
 .red {
-	background-color: #F7F9F9;
+	background-color: #FFFFFF;
 }
 
 .brown {
@@ -107,8 +137,127 @@ body {
 	margin: 0;
 }
 
+.nopadding {
+  padding: 0;
+}
+
 .nopaddingleft {
 	padding-left: 0;
+}
+
+.border {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.thumb {
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 

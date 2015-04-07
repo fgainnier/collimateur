@@ -1,8 +1,11 @@
 <div class="jumbotron center">
-<h1>Décrouvrez Le Collimateur!</h1>
-<h2>Un site pour amateur de design</h2>
+<div class="container">
+<h1>finexpr</h1>
+<h4>The first platform where financial analysts can</br> buy and sell their financial models</h4>
+</div>
 </div>
 
+<div class="container">
 <div class="center">
   <div class="row">
     <% @listings.each do |listing| %>
@@ -19,9 +22,4 @@
     <% end %>
   </div>
 </div>
-
-<br>
-
-<% if user_signed_in? %>
-  <%= link_to 'New Listing', new_listing_path,  class: "btn btn-link" %>
-<% end %>
+</div>

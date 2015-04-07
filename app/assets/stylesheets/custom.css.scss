@@ -1,27 +1,32 @@
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
 	background-color: #F5F5F1;
 	color: #3333333;
-	font-family: Arial, Helvetica, Sans-serif;
+	font-family: "Montserrat", Helvetica, Sans-serif;
 }
 
 .navbar-default{
 	background-color: #FFFFFF;
 	height: 30px;
+	margin-bottom: 0px;
+}
+
+.navbar-default .dropdown .dropdown-toggle {
+	font-size: 14px;
 }
 
 .navbar-default .navbar-brand{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
+  font-family: "Montserrat", 'Open Sans';
   font-size: 30px;
+  padding-top:12px;
 }
 
 .navbar-default .navbar-nav > li >	a {
-	font-family: Arial, Helvetica, Sans-serif;
-	font-size: 12px;
-	font-weight: bold;
+	font-family: "Montserrat", Helvetica, Sans-serif;
+	font-size: 14px;
 	color: #D19285;
 }
 
@@ -52,6 +57,58 @@ body {
 
 .jumbotron {
 	background-image: url('https://www.dropbox.com/s/d2canryutvv5zqb/jumbotron.jpg?raw=1');
-	background-position:right top;
-	h1, h2 {font-family: guardian-egyptt, georgia, serif;	}
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top:100px;	
+	height: 355px;
+	background-position: 0px -100px; 
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	color: white;	
+	font-family: "Montserrat", helvetica, sans-serif;
+	font-size: 40px;
+	text-align: center;
 }
+
+.social {
+  background-color: #C9302C;
+  color: #FFFFFF;
+}
+
+.red {
+	background-color: #F7F9F9;
+}
+
+.brown {
+	background-color: #F2F2F2;
+}
+
+.white {
+	color: white;
+}
+
+.footer {
+  background-color: #2B2D2E;
+  color: #FFFFFF;
+}
+
+.footer-list{
+  list-style-type:none;
+  margin-left:0;
+  padding-left:0;
+}
+
+.wall-entry a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.nopaddingleft {
+	padding-left: 0;
+}
+
+
